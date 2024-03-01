@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background-color: #FE355A;
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    background-color: #ffecf0;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+nav {
+    background-color: #fbc1ce;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+nav > ul > li {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#area {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 100%;
+    border-bottom: 1px solid #fbc1ce;
+}
+
+.title-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 25px;
+    
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+}
+
+.content-area > .left {
+    width: 50%;
+}
+
+.content-area > .left > p {
+    font-size: 25px;
+    padding-left: 2rem;
+}
+
+.content-area > .right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 30%;
+}
+
+.photo > img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer > ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: black;
+}

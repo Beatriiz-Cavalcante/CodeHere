@@ -8,10 +8,34 @@
 }
 
 body {
-    background-color: #FE355A;
+    background-color: #fbc1ce;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > .t1 {
+    margin-top: 3rem;
+}
+
+header > h1 {
+    color: #FE355A;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+header > p {
+    margin-top: 5rem;
+    font-size: 20px;
+    width: 45%;
 }
 main {
-    margin-left: auto;
+    margin-lefration: none;
+    color: t: auto;
     margin-right: auto;
     margin-top: 8rem;
     background-color: #ffecf0;
@@ -21,7 +45,7 @@ main {
 }
 
 nav {
-    background-color: #fbc1ce;
+    background-color: #FE355A;
     padding: 1rem 0;
     width: 100%;
     border-radius: 20px;
@@ -30,7 +54,7 @@ nav {
 nav > ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -39,19 +63,30 @@ nav > ul > li {
     font-size: 15px;
 }
 
-#area {
+nav > ul > li > a {
+
+    text-deco#ffecf0;
+}
+.area {
     padding-top: 4rem;
     padding-bottom: 4rem;
     height: 100%;
-    border-bottom: 1px solid #fbc1ce;
+    border-bottom: 1px solid #FE355A;
 }
 
+#Qualidade {
+    border: none;
+}
 .title-area {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
     font-size: 25px;
     
+}
+
+.title-area > h2 {
+    color: #FE355A;
 }
 
 .content-area {
@@ -61,6 +96,8 @@ nav > ul > li {
 
 .content-area > .left {
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .content-area > .left > p {
@@ -103,5 +140,6 @@ footer > ul {
 
 footer > ul > li > a {
     text-decoration: none;
-    color: black;
+    color: #FE355A;
+    font-weight: bold;
 }

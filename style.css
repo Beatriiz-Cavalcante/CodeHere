@@ -163,6 +163,46 @@ footer > ul > li > a {
     font-weight: bold;
 }
 
+@media screen and (min-width: 641px) {
+    .content-area {
+    display: flex;
+    justify-content: center;
+}
+
+.content-area > .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.content-area > .left > p {
+    font-size: 25px;
+    padding-left: 2rem;
+}
+
+.content-area > .right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 30%;
+}
+
+.photo > img {
+    width: 100%;
+}
+
+}
+
 @media screen and (max-width:768px) {
     .content-area {
         flex-direction: column;
@@ -243,3 +283,4 @@ footer > ul > li > a {
         display: inline-block;
     }
 }
+

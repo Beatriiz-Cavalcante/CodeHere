@@ -31,7 +31,8 @@ header > h1 {
 header > p {
     margin-top: 5rem;
     font-size: 20px;
-    width: 45%;
+    width: 48%;
+    text-align: center;
 }
 main {
     margin-left: auto;
@@ -164,6 +165,13 @@ footer > ul > li > a {
 }
 
 @media screen and (min-width: 641px) {
+    header > p {
+        margin-top: 5rem;
+        font-size: 20px;
+        width: 48%;
+        text-align: center;
+    }
+    
     .content-area {
     display: flex;
     justify-content: center;

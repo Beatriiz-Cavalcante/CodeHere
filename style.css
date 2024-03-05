@@ -89,6 +89,25 @@ nav > ul > li > a {
     color: #FE355A;
 }
 
+.title-area > .abre {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.title-area > .fecha {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.title-area > button > i {
+    font-size: 20px;
+    color: #FE355A;
+    cursor: pointer;
+    
+}
+
 .content-area {
     display: flex;
     justify-content: center;
@@ -180,5 +199,47 @@ footer > ul > li > a {
 
     main {
         width: 90%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    nav > ul > li {
+        display: none;
+    }
+
+    .content-area > .right {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    header > p {
+        width: 85%;
+    }
+
+    .content-area {
+        display: none;
+    }
+
+    .content-area > .left{
+        width: 95%;
+    }
+   
+    .content-area > .right {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .title-area {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .title-area > .abre {
+        display: inline-block;
     }
 }

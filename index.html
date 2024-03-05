@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37a1e74d74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Code?Here</title>
 </head>
@@ -28,8 +29,10 @@
         <div id="Frontend" class="area">
             <div class="title-area">
                 <h2>Frontend</h2>   
+                <button onclick="AbreCaixa()" id="a-c1" class="abre"><i class="fa-solid fa-angle-right"></i></button>
+                <button onclick="FechaCaixa()" id="f-c1" class="fecha"><i class="fa-solid fa-angle-up"></i></button>
             </div>
-            <div class="content-area">
+            <div class="content-area" id="content-area-1">
                 <div class="left">
                     <p>
                         O desenvolvimento frontend é dedicado à criação de interfaces de usuário atrativas e responsivas para aplicações web e móveis. Nesta área, 
@@ -85,8 +88,10 @@
         <div id="Backend" class="area">
             <div class="title-area">
                 <h2>Backend</h2>
+                <button onclick="AbreCaixa2()" id="a-c2" class="abre"><i class="fa-solid fa-angle-right"></i></button>
+                <button onclick="FechaCaixa2()" id="f-c2" class="fecha"><i class="fa-solid fa-angle-up"></i></button>
             </div>
-            <div class="content-area">
+            <div class="content-area" id="content-area-2">
                     <div class="left">
                         <p>
                             O backend é o coração de uma aplicação, onde a lógica de negócios é executada, e os dados são processados e armazenados. Nesta área, a ênfase está na eficiência,
@@ -133,8 +138,10 @@
         <div id="AnalisedeDados" class="area">
             <div class="title-area">
                 <h2>Análise de Dados</h2>
+                <button onclick="AbreCaixa3()" id="a-c3" class="abre"><i class="fa-solid fa-angle-right"></i></button>
+                <button onclick="FechaCaixa3()" id="f-c3" class="fecha"><i class="fa-solid fa-angle-up"></i></button>
             </div>
-            <div class="content-area">
+            <div class="content-area" id="content-area-3">
                 <div class="left">
                     <p>
                         Na análise de dados, o foco está na extração de insights significativos a partir de grandes volumes de dados para orientar a tomada de decisões estratégicas. Nesta área,
@@ -175,8 +182,10 @@
         <div id="Segurança" class="area">
             <div class="title-area">
                 <h2>Segurança</h2>
+                <button onclick="AbreCaixa4()" id="a-c4" class="abre"><i class="fa-solid fa-angle-right"></i></button>
+                <button onclick="FechaCaixa4()" id="f-c4" class="fecha"><i class="fa-solid fa-angle-up"></i></button>
             </div>
-            <div class="content-area">
+            <div class="content-area" id="content-area-4">
                 <div class="left">
                     <p>
                         A segurança da informação é uma preocupação primordial em qualquer sistema ou aplicação, e exige medidas proativas para proteger os dados contra ameaças cibernéticas. Nesta área, as linguagens e ferramentas 
@@ -215,8 +224,10 @@
         <div id="Qualidade" class="area">
             <div class="title-area">
                 <h2>Qualidade de software</h2>
+                <button onclick="AbreCaixa5()" id="a-c5" class="abre"><i class="fa-solid fa-angle-right"></i></button>
+                <button onclick="FechaCaixa5()" id="f-c5" class="fecha"><i class="fa-solid fa-angle-up"></i></button>
             </div>
-            <div class="content-area">
+            <div class="content-area" id="content-area-5">
                 <div class="left">
                     <p>
                         A garantia de qualidade de software é fundamental para garantir que os produtos atendam aos padrões de desempenho, confiabilidade e usabilidade esperados pelos usuários finais. Nesta área, 
@@ -268,5 +279,6 @@
             <li><a href="https://github.com/Beatriiz-Cavalcante" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

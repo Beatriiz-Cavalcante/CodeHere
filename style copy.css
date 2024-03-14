@@ -1,0 +1,294 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background-color: #fbc1ce;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > .t1 {
+    margin-top: 3rem;
+}
+
+header > h1 {
+    color: #FE355A;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+header > p {
+    margin-top: 5rem;
+    font-size: 20px;
+    width: 48%;
+    text-align: center;
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    background-color: #ffecf0;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+nav {
+    background-color: #FE355A;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav > ul > li {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav > ul > li > a {
+
+    text-decoration: none;
+    color: #ffecf0;
+}
+.area {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 100%;
+    border-bottom: 1px solid #FE355A;
+}
+
+#Qualidade {
+    border: none;
+}
+.title-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 25px;
+    
+}
+
+.title-area > h2 {
+    color: #FE355A;
+}
+
+.title-area > .abre {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.title-area > .fecha {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.title-area > button > i {
+    font-size: 20px;
+    color: #FE355A;
+    cursor: pointer;
+    
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+}
+
+.content-area > .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.content-area > .left > p {
+    font-size: 25px;
+    padding-left: 2rem;
+}
+
+.content-area > .right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 30%;
+}
+
+.photo > img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer > ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: #FE355A;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 641px) {
+    header > p {
+        margin-top: 5rem;
+        font-size: 20px;
+        width: 48%;
+        text-align: center;
+    }
+    
+    .content-area {
+    display: flex;
+    justify-content: center;
+}
+
+.content-area > .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.content-area > .left > p {
+    font-size: 25px;
+    padding-left: 2rem;
+}
+
+.content-area > .right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 30%;
+}
+
+.photo > img {
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width:768px) {
+    .content-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-area > .left {
+        width: 80%;
+    }
+
+    .content-area > .right {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin-top: 2rem;
+    } 
+    
+    .content-area > .left > p {
+        font-size: 20px;
+    }
+
+    .title-area > h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    nav > ul > li {
+        display: none;
+    }
+
+    .content-area > .right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    nav > ul > li {
+        display: none;
+    }
+
+    .content-area > .right {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    header > p {
+        width: 85%;
+    }
+
+    .content-area {
+        display: none;
+    }
+
+    .content-area > .left{
+        width: 95%;
+    }
+   
+    .content-area > .right {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .title-area {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .title-area > .abre {
+        display: inline-block;
+    }
+}
+

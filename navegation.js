@@ -22,15 +22,25 @@ function loadContent(id) {
     window.location.href = "content-area.html";
     switch(id) {
         case 1:
-            document.getElementById("c1").style.display = "inline-block";
-            document.getElementById("c2").style.display = "none";
+            window.location.href = "/areas/FrontEnd.html";
             break;
         case 2:
-            document.getElementById("c2").style.display = "inline-block";
-            document.getElementById("c1").style.display = "none";
-            break;           
+            window.location.href = "/areas/BackEnd.html"
+            break;  
+        case 3:
+            window.location.href = "/areas/Analise.html"
+            break;  
+        case 4:
+            window.location.href = "/areas/Seguranca.html"
+            break;  
+        case 5:
+            window.location.href = "/areas/Qualidade.html"
+            break;                       
     }
-    
+}
+
+function Volta(){
+    window.location.href = "/../home.html";
 }
 
 

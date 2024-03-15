@@ -7,3 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var typed = new Typed('#here', options);
 });
+
+function Start() {
+    window.location.href = "home.html"
+}

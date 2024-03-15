@@ -14,10 +14,6 @@ document.addEventListener("click", function(event) {
 });
 
 //Navegação para a página content area
-function loadPage() {
-    window.location.href = "content-area.html";
-}
-
 function loadContent(id) {
     window.location.href = "content-area.html";
     switch(id) {
@@ -39,9 +35,17 @@ function loadContent(id) {
     }
 }
 
+
+//Navegação para a página home
 function Volta(){
     window.location.href = "/../home.html";
 }
 
+//Navegação para a págino de roadmaps
+function Maps(){
+    window.location.href = "roadmaps.html"; 
+}
 
-
+function Maps2() {
+    window.location.href = "/../roadmaps.html";
+}

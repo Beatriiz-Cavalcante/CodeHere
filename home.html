@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/37a1e74d74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Code?Here</title>
 </head>
 <body>
     <nav>
         <a href="index.html">volta</a>
         <h1>Conheça as áreas</h1>
-        <button>menu</button>
+        <button id="menu">menu</button>
     </nav>
-    <main>
-        <div id="1" class="area">
+    <aside id="sidebar">
+        <a href="home.html">Conheça as áreas</a>
+        <a href="#">Roadmap</a>
+    </aside>
+    <main id="content">
+        <div id="1" class="area" onclick="loadContent(1)">
             <h3>Programação - FrontEnd</h3>
             <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div id="2" class="area">
+        <div id="2" class="area" onclick="loadContent(2)">
             <h3>Programação - BackEnd</h3>
             <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div id="3" class="area">
+        <div id="3" class="area" onclick="loadContent(3)">
             <h3>Análise de Dados</h3>
             <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div id="4" class="area">
+        <div id="4" class="area" onclick="loadContent(4)">
             <h3>Segurança</h3>
             <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div id="5" class="area">
+        <div id="5" class="area" onclick="loadContent(5)">
             <h3>Qualidade de Sofware</h3>
             <i class="fa-solid fa-angle-right"></i>
         </div>
+        <button onclick="loadPage()">Clique aqui</button>
     </main>
+    <script src="navegation.js"></script>
 </body>
 </html>

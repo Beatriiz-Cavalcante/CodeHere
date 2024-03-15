@@ -43,6 +43,8 @@ header > p {
     font-size: 20px;
     width: 70%;
     text-align: center;
+    color: rgb(255, 249, 250);
+    font-weight: bold;
 }
 
 header > a {
@@ -56,6 +58,7 @@ header > a {
 
 header > a:hover {
     color: white;
+    font-weight: bold;
 }
 
 header > a:active {
@@ -63,3 +66,32 @@ header > a:active {
     top: 1px;
 }
 /*home*/
+
+nav {
+    background-color: #FE355A;
+    color: white;
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.area {
+    background-color: white;
+    color: #FE355A;
+    width: 85%;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}

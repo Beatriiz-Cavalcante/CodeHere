@@ -69,14 +69,12 @@ header > a:active {
 /*home*/
 
 nav {
-    border-bottom: 1px solid #FE355A;
+    margin-top: 3rem;
     color: #FE355A;
     display: flex;
     padding: 1rem;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    justify-content: space-around;
 }
 
 main {
@@ -84,17 +82,22 @@ main {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .area {
     background-color: white;
     color: #FE355A;
-    width: 85%;
+    width: 80%;
     padding: 2.5rem 1rem;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.area > i {
+    margin-right: 1.5rem;
 }
 
 #menu {
@@ -102,7 +105,7 @@ main {
     color: white;
     padding: .5rem;
     border-radius: 5px;
-    border: no;
+    border: none;
 }
 
 #sidebar {

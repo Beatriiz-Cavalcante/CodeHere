@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <title>Code?Here</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#fbc1ce">
+
 </head>
 <body>
     <header>
@@ -20,6 +23,22 @@
     </header>
     
     <script src="title.js"></script>
+    <script>
+        let newWorker;
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+              newWorker = reg.installing;
+            });
+          });
+          let refreshing;
+          navigator.serviceWorker.addEventListener('controllerchange', function () {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
+          });
+        }
+      </script>
 </body>
 </html>
 

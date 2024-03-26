@@ -12,12 +12,12 @@ body {
 
 .title-area {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #FE355A;
     font-weight: bold;
-    border-bottom: 1px solid #FE355A;
     padding: 1rem;
-    margin-bottom: 4rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .title-area > h2 {
@@ -79,12 +79,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2.5rem;
 }
 
 .left {
     font-size: 20px;
     font-weight: 300;
-    
     width: 85%;
     height: 20vh;
     text-align: justify;
@@ -92,17 +92,23 @@ body {
 }
 
 .content-area > .right {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 1.5rem;
-    grid-column-gap: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
     height: 80vh;
     width: 85%;
-    margin-left: 7.5%;
-    margin-right: auto;
-   
-    padding-left: 7.5%;
-    padding-right: 7.5%;
+}
+
+.right1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .type {
@@ -111,11 +117,9 @@ body {
     justify-content: center;
     align-items: center;    
     border-radius: 50%;
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     box-shadow: 2px 0 5px rgba(129, 52, 85, 0.5);
-  
-    
 }
 
 .photo {
@@ -128,5 +132,8 @@ body {
 
 #typeBack {
     grid-row-gap: .6rem;
-    
+}
+
+#rightQualidade {
+    margin-top: 2rem;
 }

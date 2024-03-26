@@ -9,6 +9,14 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
 
         './index.html',
+        './home.html',
+        './roadmaps.html',
+
+        'areas/Analise.html',
+        'areas/BackEnd.html',
+        'areas/FrontEnd.html',
+        'areas/Qualidade.html',
+        'areas/Seguranca.html',
 
         'AppIcon/android/android-launchericon-512-512.png',
         'AppIcon/android/android-launchericon-192-192.png',
